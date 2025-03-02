@@ -2,18 +2,18 @@
 
 Briefly summarize your client, Artemis Financial, and its software requirements. Who was the client? What issue did the company want you to address?
 
-What did you do well when you found your client’s software security vulnerabilities? 
+The client Artemis Financial is in need of software requirements for their financial services that prioritize data security and regulatory compliance. The company required a thorough briefing of their applications vulnerabilities in their system to meet their goal of achieving secure software solution to protect sensitive financial data, ensure secure transactions, and prevent potential cyber threats. My task was to identify and mitigate vulnerabilities in their existing system while aligning the application with industry-standard security protocols
 
-Why is it important to code securely? What value does software security add to a company’s overall well-being?
+What did you do well when you found your client’s software security vulnerabilities? I used the maven CVE dependency check to run vulnerability scans on the program. During the vulnerability assessments, the scan ran into false positives. After ensuring that false positives are ruled out I tested and identified common vulnerabilities such as SQL injection, XSS, and enforced https/TLS encryption for data security. 
 
-Which part of the vulnerability assessment was challenging or helpful to you?
+Why is it important to code securely? What value does software security add to a company’s overall well-being? Secure coding is critical for protecting sensitive information, especially for a financial company. Being able to provide a secure and reliable program that protects your information while using it is crucial for ensuring that customers trust your reputation. Implementing secure code prevents data breaches, financial loss, poor PR, and ultimately leads to a safe application. 
 
-How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
+Which part of the vulnerability assessment was challenging or helpful to you? One of the more challenging yet insightful aspects of the vulnerability assessment was identifying potential security flaws in third-party dependencies. While reviewing dependencies using Dependency Check. After learning to user the Dependency check I learned that it was crucial to regularly update and patch the libraries used in your applications to reduce security risks.
 
-How did you make certain the code and software application were functional and secure? 
+How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use? To help strengthen security, I implemented different layers of protection, including encryption such as SHA-256 hashing for integrity verification, input validation and error handling to prevent injection attacks, and HTTPS /TLS enforcement for secure communication. In the future I would utilize automated SIEM or SOAR tools or even use some penetration tactics in a sand box environment to test the strength of the application.
 
-After refactoring the code, how did you check to see whether you introduced new vulnerabilities?
+How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities? I conducted multiple rounds of dependency scanning to identify and address any vulnerabilities within third-party libraries. By using OWASP Dependency Check, I was able to review CVE (Common Vulnerabilities and Exposures) reports, ensuring that all dependencies were up to date and free of known security risks. After refactoring the code, I verified that no new security issues were introduced by running a secondary vulnerability assessment using the Dependency Check. 
 
-What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?
+What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks? Throughout this project I used Maven, The Dependency check tool, the Mitre CVE resource site, certificate management tool, Eclipse and Visual studio for IDEs. I believe that some of the secure coding practices used in these projects included proper error handling, privilege access control, and cryptography, which are all essential for strengthening the application. 
 
-Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?
+Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment? Both of the projects and materials covered demonstrate the ability to analyze, assess, and take action against insecure code. The projects went through industry standard practices that cover analyzing common vulnerabilities and refactoring with the appropriate actions to handle said vulnerabilities. 
